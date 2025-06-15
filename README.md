@@ -59,6 +59,7 @@ psql -f 2_dim_tables.sql               # Create dimension tables
 psql -f 3_fact_tables.sql              # Create fact tables
 psql -f 4_etl_scripts.sql              # Run ETL to populate tables
 psql -f 5_indices_and_constraints.sql  # Add keys and indexes
+```
 
 ## 4. Usage
 
