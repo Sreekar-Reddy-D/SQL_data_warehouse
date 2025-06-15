@@ -4,11 +4,11 @@ A structured SQL-based data warehouse project designed to store, transform, and 
 
 ## 📋 Table of Contents
 
-1. [Overview](#1.overview)  
-2. [ETL Pipeline](#etl-pipeline)  
-3. [Installation](#installation)  
-4. [Usage](#usage)  
-5. [Testing & Validation](#testing--validation)  
+1. [Overview](#1.-Overview)  
+2. [ETL Pipeline](#2.-etl-pipeline)  
+3. [Installation](#3.-installation)  
+4. [Usage](#4.-usage)  
+5. [Testing & Validation](#5.-testing--validation)  
 
 ---
 
