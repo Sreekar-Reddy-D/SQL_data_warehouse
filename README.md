@@ -2,14 +2,6 @@
 
 A structured SQL-based data warehouse project designed to store, transform, and analyze organizational data using a star-schema-like approach. This includes ETL processes, dimension and fact tables, and data validation.
 
-## 📋 Table of Contents
-
-1. [Overview](#1.-Overview)  
-2. [ETL Pipeline](#2.-etl-pipeline)  
-3. [Installation](#3.-installation)  
-4. [Usage](#4.-usage)  
-5. [Testing & Validation](#5.-testing--validation)  
-
 ---
 
 ## 1. Overview
