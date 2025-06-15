@@ -24,11 +24,11 @@ The goal of this project is to consolidate and transform raw sales data from ERP
 
 ## Project Structure
 data-warehouse-project/
-├── datasets/ # Raw source CSV files
-├── scripts/ # SQL scripts organized by layer (bronze, silver, gold)
-├── tests/ # SQL scripts for data validation
-├── README.md # Project overview
-└── requirements.txt # Optional dependencies
+- ├── datasets/ # Raw source CSV files
+- ├── scripts/ # SQL scripts organized by layer (bronze, silver, gold)
+- ├── tests/ # SQL scripts for data validation
+- ├── README.md # Project overview
+- └── requirements.txt # Optional dependencies
 
 ---
 
