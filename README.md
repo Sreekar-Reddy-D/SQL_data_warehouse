@@ -53,7 +53,22 @@ data-warehouse-project/
 
 Use the SQL files in the `tests/` folder to validate:
 
-- Referential integrity (foreign keys)
-- Non-null constraints
-- Row counts across ETL stages
-- Join consistency between fact and dimension tables
+To ensure data integrity and analytical reliability, the project includes dedicated validation scripts for both the Silver and Gold layers of the data warehouse.
+
+### Silver Layer (`tests/silver/quality_check.sql`)
+This script performs checks after transformation but before loading into the analytical model. It validates:
+
+- **Primary Key Integrity** – No `NULL` or duplicate primary keys in CRM and product tables.
+- **Data Cleanliness** – No unwanted spaces in key text fields.
+- **Categorical Consistency** – Ensures standardized values in fields like marital status, gender, and product lines.
+- **Date Validity** – Flags unrealistic or incorrectly ordered date values.
+- **Business Logic** – Confirms calculated fields (e.g., `sales = quantity × price`) are consistent and non-null.
+
+### Gold Layer (`tests/gold/quality_checks.sql`)
+This script checks the final analytical model for:
+
+- **Surrogate Key Uniqueness** – No duplicate `customer_key` or `product_key` values in dimension tables.
+- **Referential Integrity** – All foreign keys in the fact table must have matching records in dimension tables.
+
+> Run these checks after ETL stages. Resolve any violations before using the data for reporting or insights.
+
